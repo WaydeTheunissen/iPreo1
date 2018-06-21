@@ -299,7 +299,7 @@ section li:last-child {
 	}		
 }
 
-@media screen and (max-width: 970px) 
+@media screen and (max-width: 986px) 
 {
 	.content_container {
 		max-width: 455px;
