@@ -4,12 +4,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bootstrap - Prebuilt Layout</title>
+		<title>iPreo Assessment</title>
 
 		<!-- Bootstrap //-->
 		<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
-		<!-- Custom //-->
+		<!-- Custom CSS //-->
 		<link href="bootstrap/dist/css/custom.css" rel="stylesheet">
 
 	</head>
@@ -21,10 +21,10 @@
 
 				<ul class="float-right">
 
-					<li class="search"><!--<a href="#"></a>-->
+					<li class="search">
 						<input type="text" class="search-focus" name="" placeholder=""  data-toggle="tooltip" title="Click to Search" />
 					</li>			
-					<li class="notification"><a href="#" data-toggle="tooltip" title="View Notifications"></a></li>			
+					<li class="notification"><a href="#" data-toggle="tooltip" title="View Notifications"></a><div class="notification__icon">8</div></li>			
 					<li class="dropdown">
 						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img src="images/profile_picture.png" width="32" height="32" />
@@ -512,10 +512,7 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed --> 
 		<script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		
-		<script>
-			$(function () {
-			  $('[data-toggle="tooltip"]').tooltip()
-			})
-		</script>
+		<!-- Custom JS for third party Javascript plugins or additional Bootstrap scripts --> 
+		<script src="bootstrap/dist/js/index.js"></script>
 	</body>
 </html>

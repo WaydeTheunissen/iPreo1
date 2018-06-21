@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* 	==============
+		GENERAL 	
+	============== */
 a,
 button:focus {
 	outline: none;	
@@ -70,12 +73,33 @@ header button {
 	margin-left: 18px;	
 }
 
+.notification {
+	position: relative;
+	right: 0!important;
+}
+
 .notification a {
 	background: url(../../../images/ipreo_sprite.png) -1px -68px no-repeat;
 	width: 20px;
 	height: 20px;
 	display: block;	
 }
+
+.notification__icon {
+    position: absolute;
+    top: -6px;
+    background-color: #cc0000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #efff00;
+    text-align: center;
+    left: -4px;
+    padding: 0px 0px;
+    display: block;
+    font-weight: bold;	
+} 
 
 .dropdown-menu {
 	background-color: #0e334c;
@@ -99,12 +123,36 @@ header button {
 	background-color: #175076;	
 }
 
+/* Search Bar */
+.search-focus {
+	background: url(../../../images/ipreo_sprite.png) 10px -38px no-repeat;
+	outline: none;
+	width: 20px;
+	height: 20px;
+	transition: all .5s;
+	border: 0;
+	padding: 15px;
+	cursor: pointer;
+}
+.search-focus:focus {
+	background: #175076 url(../../../images/ipreo_sprite.png) 7px -33px no-repeat;
+	border:1px solid #fff;
+	border-radius: 50px;
+	padding: 10px;	
+	width: 250px;
+	padding-left: 50px;
+	color: #fff;
+	height:30px;
+	margin-top: -5px;
+}
+/* Search Bar End */
+
 
 /* 	================
 		CONTAINER 	
 	================ */
 .content_container {
-	margin: 30px;
+	margin: 30px auto;
 }
 
 .content_container ul {
@@ -115,10 +163,10 @@ header button {
 section li {
 	width: 100%;
 	max-width: 455px;
-	height: 272px;
-	max-height: 272px;
+	height: auto;
+    max-height: 405px;
 	display: inline-block;
-	margin-right: /*30px*/2%;
+	margin-right: 30px;
 	border: 1px solid #e9ecef;
 	background-color: #fff;
 	margin-bottom: 30px;
@@ -163,7 +211,6 @@ section li:last-child {
 	padding: 15px !important;
 	clear: both;
 	display: inline-block;
-	/*max-width: 425px;*/
 	margin: 0 auto !important;
 }
 
@@ -176,6 +223,7 @@ section li:last-child {
 	line-height: 24px;
 	font-size: 12px;
 	margin-bottom: 0;
+    word-break: break-word;	
 }
 
 .card__container li li {
@@ -192,12 +240,12 @@ section li:last-child {
 }
 /* End Card Container */
 
+
 /* First Row Header */
 .card__container li:first-child {
 	border: 1px solid #dee2e6;
-	max-height: 28px;
-	height: 28px;
-	display: inline-table;	
+	display: inline-table;
+    border-right: 0;	
 }
 
 .card__container li li:nth-child(2n) {
@@ -217,37 +265,16 @@ section li:last-child {
 	border: 0 !important;	
 }
 
+.card__container li li:last-child {
+	border: 0 !important;	
+}
+
 .card__container li:first-child li {
 	border-right: 1px solid #dee2e6 !important;	
 	font-weight: bold;
 	background-color: #f1f3f5 !important;	
 }
 /* End First Row Header */
-
-
-/* Search Bar */
-.search-focus {
-	background: url(../../../images/ipreo_sprite.png) 10px -38px no-repeat;
-	outline: none;
-	width: 20px;
-	height: 20px;
-	transition: all .5s;
-	border: 0;
-	padding: 15px;
-	cursor: pointer;
-}
-.search-focus:focus {
-	background: #175076 url(../../../images/ipreo_sprite.png) 7px -33px no-repeat;
-	border:1px solid #fff;
-	border-radius: 50px;
-	padding: 10px;	
-	width: 250px;
-	padding-left: 50px;
-	color: #fff;
-	height:30px;
-	margin-top: -5px;
-}
-/* Search Bar End */
 
 
 /* 	====================
@@ -258,15 +285,27 @@ section li:last-child {
 	section li:nth-child(3n) {
 		margin-right: 30px;
 	}
+
+	.content_container {
+		max-width: 970px;
+	}	
 	
 	.content_container ul {
-		margin: 30px 12%;
+		margin: 30px 0;
 	}	
 	
 	.card__container ul {
 		margin: 0;
 	}		
 }
+
+@media screen and (max-width: 970px) 
+{
+	.content_container {
+		max-width: 455px;
+	}
+}
+
 @media screen and (max-width: 540px) 
 {
 	header {
@@ -296,6 +335,14 @@ section li:last-child {
     top: 0;
     right: 0;
 	}	
+}
+
+@media screen and (max-width: 385px) 
+{
+	.card__container li:first-child li {
+		max-height: 48px; 
+		 height: 48px; 
+	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 540px) 
