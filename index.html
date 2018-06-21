@@ -1,112 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap - Prebuilt Layout</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap - Prebuilt Layout</title>
 
-<!-- Bootstrap //-->
-<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<!-- Bootstrap //-->
+		<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
-<!-- Custom //-->
-<link href="bootstrap/dist/css/custom.css" rel="stylesheet">
+		<!-- Custom //-->
+		<link href="bootstrap/dist/css/custom.css" rel="stylesheet">
 
-</head>
-<body>
+	</head>
+	<body>
 
-<div class="container-fluid ipreo_container">
-	<header>
-		<h1 class="logo float-left"><a href="#"></a></h1>
-		
-		<ul class="float-right">
-			<li class="search"><!--<a href="#"></a>-->
-			<input type="text" class="search-focus" name="" placeholder="">
-			</li>
-			<li class="notification"><a href="#"></a></li>
-			<li class="dropdown">
-			  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<img src="images/profile_picture.png" width="32" height="32" />
-			  </button>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-			  </div>
-			</li>
-		</ul>
-		
-	</header>
-	
-	<section class="content_container">
-		<ul>
-			<li>
-				<div class="card__title"><a href="#">Card</a></div>
+		<div class="container-fluid ipreo_container">
+			<header>
+				<h1 class="logo float-left"><a href="#"></a></h1>
+
+				<ul class="float-right">
+
+					<li class="search"><!--<a href="#"></a>-->
+						<input type="text" class="search-focus" name="" placeholder=""  data-toggle="tooltip" title="Click to Search" />
+					</li>			
+					<li class="notification"><a href="#" data-toggle="tooltip" title="View Notifications"></a></li>			
+					<li class="dropdown">
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="images/profile_picture.png" width="32" height="32" />
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">User Profile</a>
+							<a class="dropdown-item" href="#">Account Details</a>
+							<a class="dropdown-item" href="#">Outstanding</a>
+							<a class="dropdown-item" href="#">Items To Get</a>
+							<a class="dropdown-item" href="#">Item On Order</a>														
+						</div>
+					</li>
+
+				</ul>
+
+			</header>
+
+			<section class="content_container">
+				<ul>
 				
-				<div class="clr"></div>
-				
-				<ul class="card__container">
+					<!-- First Row //-->
 					<li>
-						<ul>
-							<li>Issuer Name</li>
-							<li>Tranche</li>
-							<li>Book State</li>							
-						</ul>
-					</li>
-					<li> 
-						<ul>
-							<li>Iren S.P.A.</li>
-							<li>Renten 20Y</li>
-							<li>Books open</li>							
-						</ul>					
-					</li>
-					<li> 					
-						<ul>
-							<li>Erste Abwick Klungsantaint</li>
-							<li>10Y</li>
-							<li>Books open</li>							
-						</ul>					
-					</li>
-					<li> 
-						<ul>
-							<li>Landwristchaffic Rentenbank</li>
-							<li>IBRD 16Y</li>
-							<li>Books subject</li>							
-						</ul>					
-					</li>
-					<li> 
-						<ul>
-							<li>Avia PLC</li>
-							<li>AVIA 7Y</li>
-							<li>Books open</li>							
-						</ul>					
-					</li>
-					<li> 
-						<ul>
-							<li>United Parcel Service</li>
-							<li>UPS 12Y 200m</li>
-							<li>Allocated</li>							
-						</ul>					
-					</li>
-				</ul>				
-			</li>
-			<li></li>
-			<li></li>
-		</ul>
-	</section>
-	
-	<style>
+						<div class="card__title"><a href="#">Card</a></div>
 
-	</style>
-	
-</div>
+						<div class="clr"></div>
 
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
 
+						<div class="clr"></div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="bootstrap/dist/js/jquery-1.11.3.min.js"></script>
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+
+				
+					<!-- Second Row //-->						
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+
+				
+					<!-- Third Row //-->			
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>
+					<li>
+						<div class="card__title"><a href="#">Card</a></div>
+
+						<div class="clr"></div>
+
+						<ul class="card__container">
+							<li>
+								<ul>
+									<li>Issuer Name</li>
+									<li>Tranche</li>
+									<li>Book State</li>							
+								</ul>
+							</li>
+							<li> 
+								<ul>
+									<li>Iren S.P.A.</li>
+									<li>Renten 20Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 					
+								<ul>
+									<li>Erste Abwick Klungsantaint</li>
+									<li>10Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Landwristchaffic Rentenbank</li>
+									<li>IBRD 16Y</li>
+									<li>Books subject</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>Avia PLC</li>
+									<li>AVIA 7Y</li>
+									<li>Books open</li>							
+								</ul>					
+							</li>
+							<li> 
+								<ul>
+									<li>United Parcel Service</li>
+									<li>UPS 12Y 200m</li>
+									<li>Allocated</li>							
+								</ul>					
+							</li>
+						</ul>				
+					</li>									
+				</ul>
+			</section>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+		<script src="bootstrap/dist/js/jquery-1.11.3.min.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed --> 
+		<script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<script>
+			$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
+	</body>
 </html>
